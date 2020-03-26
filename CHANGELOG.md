@@ -1,3 +1,4 @@
 ## [0.0.1] - TODO: Add release date.
 
-* TODO: Describe initial release.
+* Token reload in 9 minutes.
+* Speech to text.

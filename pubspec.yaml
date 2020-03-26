@@ -1,8 +1,8 @@
 name: tts_azure
-description: A new Flutter package project.
+description: https://github.com/leonus96/tts_azure.git
 version: 0.0.1
-author:
-homepage:
+author: Joseph León<leonus96@gmail.com>
+homepage: https://github.com/leonus96/tts_azure
 
 environment:
   sdk: ">=2.1.0 <3.0.0"
