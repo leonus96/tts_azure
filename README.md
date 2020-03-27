@@ -11,7 +11,7 @@ Package that interacts with the Azure Cognitive Services REST API to convert tex
 ## Getting Started
 
 1. Create an account and subscribe in [Azure](https://azure.microsoft.com/)
-2. [Add subscription ](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) 
+2. [Add subscription.](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) 
 3. Add the [Cognitive Services](https://azure.microsoft.com/es-es/services/cognitive-services/) resource and get the endpoint and subscription key
 4. [Install](https://pub.dev/packages/tts_azure#-installing-tab-) `tts_azure` package.
 
@@ -40,4 +40,4 @@ ttsazure.play(text, lang, shortName);
 ### Complete Example
 There is a very simple example project in the example folder. Check it out. Otherwise, keep reading to get up and running.
 
-*Author: @leonus96*
+*Author: [@leonus96](https://github.com/leonus96)*
