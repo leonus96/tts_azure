@@ -1,14 +1,44 @@
-# tts_azure
+# Speech to text from Azure.
 
-A new Flutter package project.
+[![image alt](https://img.shields.io/badge/license-MIT-green)](https://github.com/leonus96/tts_azure/blob/master/LICENSE)
+[![image alt](https://img.shields.io/pub/v/tts_azure)](https://pub.dev/packages/tts_azure/versions)
+
+A Flutter package to use [Text to Speech from Azure.](https://azure.microsoft.com/es-es/services/cognitive-services/text-to-speech/)
+
+Package that interacts with the Azure Cognitive Services REST API to convert text to speech.
+
+## Usage
+To use this package, add `tts_azure` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/)
 
 ## Getting Started
 
-This project is a starting point for a Dart
-[package](https://flutter.dev/developing-packages/),
-a library module containing code that can be shared easily across
-multiple Flutter or Dart projects.
+1. Create an account and subscribe in [Azure](https://azure.microsoft.com/)
+2. [Add subscription ](https://portal.azure.com/#blade/Microsoft_Azure_Billing/SubscriptionsBlade) 
+3. Add the [Cognitive Services](https://azure.microsoft.com/es-es/services/cognitive-services/) resource and get the endpoint and subscription key
+4. [Install](https://pub.dev/packages/tts_azure#-installing-tab-) `tts_azure` package.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+## Usage
+
+### Setting up
+First, you must define a new `TTS Azure` object by initializing it and passing it the required parameters as such:
+
+```dart
+final ttsazure = TTSAzure("YOUR_SUBSCRIPTION_ID", "YOUR_REGION_INDENTIFIER");
+```
+### Convert Text ➡️ Speech
+Finally, the only thing left to do is call the play() method to convert the text to speech, in this way:
+
+```dart
+String text = "Hello World";
+String lang = "en-US";
+String shortName = "BenjaminRUS"; // The voice.
+
+ttsazure.play(text, lang, shortName);
+```
+
+**NOTE**: The azure api allows you to use the authentication token (automatically obeyed by this package) only for 10 minutes, so this package updates the token in a minimum time of 9 minutes.
+
+### Complete Example
+There is a very simple example project in the example folder. Check it out. Otherwise, keep reading to get up and running.
+
+*Author: @leonus96*
