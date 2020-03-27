@@ -1,3 +1,8 @@
+## [0.0.5] - 27/03/2020
+
+* Update dependencies.
+* Fix README.md
+
 ## [0.0.4] - 27/03/2020
 
 * Fix README.MD.
