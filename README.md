@@ -7,8 +7,6 @@ A Flutter package to use [Text to Speech from Azure.](https://azure.microsoft.co
 
 Package that interacts with the Azure Cognitive Services REST API to convert text to speech.
 
-## Usage
-To use this package, add `tts_azure` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/)
 
 ## Getting Started
 
@@ -18,6 +16,7 @@ To use this package, add `tts_azure` as a [dependency in your pubspec.yaml file]
 4. [Install](https://pub.dev/packages/tts_azure#-installing-tab-) `tts_azure` package.
 
 ## Usage
+To use this package, add `tts_azure` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/)
 
 ### Setting up
 First, you must define a new `TTS Azure` object by initializing it and passing it the required parameters as such:
