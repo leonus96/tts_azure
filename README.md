@@ -22,10 +22,10 @@ To use this package, add `tts_azure` as a [dependency in your pubspec.yaml file]
 First, you must define a new `TTS Azure` object by initializing it and passing it the required parameters as such:
 
 ```dart
-final ttsazure = TTSAzure("YOUR_SUBSCRIPTION_ID", "YOUR_REGION_INDENTIFIER");
+final ttsazure = TTSAzure("YOUR_SUBSCRIPTION_ID", "YOUR_REGION_IDENTIFIER");
 ```
 ### Convert Text ➡️ Speech
-Finally, the only thing left to do is call the play() method to convert the text to speech, in this way:
+Finally, the only thing left to do is call the `play()` method to convert the text to speech, in this way:
 
 ```dart
 String text = "Hello World";
@@ -35,7 +35,7 @@ String shortName = "BenjaminRUS"; // The voice.
 ttsazure.play(text, lang, shortName);
 ```
 
-**NOTE**: The azure api allows you to use the authentication token (automatically obeyed by this package) only for 10 minutes, so this package updates the token in a minimum time of 9 minutes.
+**NOTE**: The Azure API allows you to use the authentication token (automatically obeyed by this package) only for 10 minutes, so this package updates the token in a minimum time of 9 minutes.
 
 ### Complete Example
 There is a very simple example project in the example folder. Check it out. Otherwise, keep reading to get up and running.

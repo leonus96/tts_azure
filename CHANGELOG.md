@@ -1,3 +1,13 @@
+## [0.0.4] - 27/03/2020
+
+* Fix README.MD.
+* Add description in pubspec.yaml
+
+## [0.0.3] - 26/03/2020
+
+* Fix README.MD.
+* Change language in example project.
+
 ## [0.0.2] - 26/03/2020
 
 * Updated documentation in README.MD.
