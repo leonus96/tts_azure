@@ -16,6 +16,10 @@ Package that interacts with the Azure Cognitive Services REST API to convert tex
 4. [Install](https://pub.dev/packages/tts_azure#-installing-tab-) `tts_azure` package.
 
 ## Usage
+### Complete Example
+There is a very simple example project in the [example](https://github.com/leonus96/tts_azure/blob/master/example/lib/main.dart) folder. Check it out. Otherwise, keep reading to get up and running.
+
+
 To use this package, add `tts_azure` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/)
 
 ### Setting up
@@ -36,8 +40,5 @@ ttsazure.play(text, lang, shortName);
 ```
 
 **NOTE**: The Azure API allows you to use the authentication token (automatically obeyed by this package) only for 10 minutes, so this package updates the token in a minimum time of 9 minutes.
-
-### Complete Example
-There is a very simple example project in the example folder. Check it out. Otherwise, keep reading to get up and running.
 
 *Author: [@leonus96](https://github.com/leonus96)*
