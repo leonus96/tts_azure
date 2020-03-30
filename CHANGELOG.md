@@ -1,5 +1,9 @@
 ## [0.0.6] - 27/03/2020
 
+* Replace `audioplayer` package for `audioplayers`.
+
+## [0.0.6] - 27/03/2020
+
 * Add List of Azure standart voices.
 
 ## [0.0.5] - 27/03/2020
