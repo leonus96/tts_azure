@@ -32,9 +32,9 @@ class _MyHomePageState extends State<MyHomePage> {
   
   @override
   void initState() {
-    _ttsazure = TTSAzure("YOUR_SUBSCRIPTION_ID", "YOUR_REGION_INDENTIFIER");
+    _ttsazure = TTSAzure("YOUR_SUBSCRIPTION_ID", "YOUR_REGION_IDENTIFIER");
     _controller = TextEditingController();
-    _controller.text = "Hello World!";
+    _controller.text = "¡Hola Mundo!";
     super.initState();
   }
 

@@ -3,13 +3,13 @@ library tts_azure;
 import 'dart:io';
 import 'dart:typed_data';
 import 'package:path_provider/path_provider.dart';
-import 'package:audioplayer/audioplayer.dart';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:xml/xml.dart' as xml;
 import 'package:http/http.dart' as http;
 
 
 class TTSAzure {
-  AudioPlayer _audioPlugin;
+  AudioPlayer _audioPlayer;
   String _regionIdentifier;
   String _subscriptionKey;
   String _accessToken;
@@ -18,7 +18,7 @@ class TTSAzure {
   TTSAzure(String subscriptionKey, String regionIdentifier) {
     this._regionIdentifier = regionIdentifier;
     this._subscriptionKey = subscriptionKey;
-    _audioPlugin = AudioPlayer();
+    this._audioPlayer = AudioPlayer();
     _updateAccessToken();
   }
 
@@ -73,7 +73,7 @@ class TTSAzure {
 
     await file.writeAsBytes(bytes);
     if (await file.exists()) {
-      _audioPlugin.play(file.path, isLocal: true);
+      _audioPlayer.play(file.path);
     }
   }
 }
