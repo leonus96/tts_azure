@@ -1,4 +1,4 @@
-## [0.0.6] - 27/03/2020
+## [0.0.7] - 27/03/2020
 
 * Replace `audioplayer` package for `audioplayers`.
 
