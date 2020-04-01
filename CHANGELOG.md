@@ -1,3 +1,8 @@
+## [1.0.0] - 27/03/2020
+
+* Replace function name `play` to `speak`.
+* Implement `stop` function.
+
 ## [0.0.7] - 27/03/2020
 
 * Replace `audioplayer` package for `audioplayers`.

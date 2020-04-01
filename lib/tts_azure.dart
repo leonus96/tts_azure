@@ -41,7 +41,7 @@ class TTSAzure {
   }
 
 
-  Future<void> play(String text, String lang, String shortName) async {
+  Future<void> speak(String text, String lang, String shortName) async {
     xml.XmlBuilder builder = xml.XmlBuilder();
     builder.element('speak', nest: () {
       builder.attribute('version', '1.0');
@@ -75,6 +75,10 @@ class TTSAzure {
     if (await file.exists()) {
       _audioPlayer.play(file.path);
     }
+  }
+
+  Future<void> stop() async {
+    await _audioPlayer.stop();
   }
 }
 

@@ -1,6 +1,6 @@
 name: tts_azure
 description: Text to Speech from Azure. A Flutter package that interacts with the Azure Cognitive Services REST API to convert text to speech.
-version: 0.0.7
+version: 1.0.0
 author: Joseph León<leonus96@gmail.com>
 homepage: https://github.com/leonus96/tts_azure
 
