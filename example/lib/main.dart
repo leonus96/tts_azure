@@ -32,14 +32,18 @@ class _MyHomePageState extends State<MyHomePage> {
   
   @override
   void initState() {
-    _ttsazure = TTSAzure("YOUR_SUBSCRIPTION_ID", "YOUR_REGION_IDENTIFIER");
+    _ttsazure = TTSAzure("309d7808e90c4a18b05b5b1199a229f6", "eastusr");
     _controller = TextEditingController();
     _controller.text = "¡Hola Mundo!";
     super.initState();
   }
 
   void _play() {
-    _ttsazure.play(_controller.text, _lang, _shortName);
+    _ttsazure.speak(_controller.text, _lang, _shortName);
+  }
+
+  void _stop() {
+    _ttsazure.stop();
   }
 
   @override
@@ -60,10 +64,21 @@ class _MyHomePageState extends State<MyHomePage> {
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _play,
-        tooltip: 'Speech to Text',
-        child: Icon(Icons.play_arrow),
+      floatingActionButton: Row(
+        mainAxisAlignment: MainAxisAlignment.end,
+        children: <Widget>[
+          FloatingActionButton(
+            onPressed: _play,
+            tooltip: 'Speech to Text',
+            child: Icon(Icons.play_arrow),
+          ),
+          SizedBox(width: 15,),
+          FloatingActionButton(
+            onPressed: _stop,
+            tooltip: 'Stop speech',
+            child: Icon(Icons.stop),
+          )
+        ],
       ),
     );
   }
